@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Modern Product Page</title>
+    </head>
+    <style>
+        /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+header img {
+    margin-top: 10px;
+    width: 120px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* Main Product Image */
+figure {
+    text-align: center;
+    margin: 30px 0;
+}
+
+figure img {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Thumbnail Images */
+body > img {
+    margin: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+body > img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Video Section */
+video {
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+}
+
+/* Product Title */
+h1 {
+    margin-top: 20px;
+    color: hsl(56, 88%, 48%);
+}
+
+/* Price */
+strong {
+    color: #e63946;
+    font-size: 18px;
+}
+
+/* Form */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    max-width: 400px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form select,
+form input[type="number"],
+form input[type="color"] {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0 15px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Button */
+form input[type="submit"] {
+    background: #1e3c72;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background: #2a5298;
+}
+
+/* Details Section */
+details {
+    background: white;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+details summary {
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    background: #1e3c72;
+    color: white;
+    border-radius: 8px;
+}
+    </style>
+    <body>
+        <header>
+            <h1 align="center">welcome to E-commerce Product Page</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="#men">Men</a></li>
+                    <li><a href="#women">Women</a></li>
+                    <li><a href="#sale">Sale</a></li>
+                    <li><a href="#cart">Cart</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <figure>
+            <img src="https://campussutra.com/cdn/shop/files/CSMSSRT7738_1_3b3a4a5e-5da6-48a2-9bb3-c4bfdbe43f3f.jpg?v=1731147468&width=800" width="300" alt="this is a pure cotton shirt">
+
+        </figure>
+        <img src="https://campussutra.com/cdn/shop/files/CSMSSRT7738_4_b3e7dfc7-7dc3-40a1-9e3a-3ddc9f70b604.jpg?v=1731147468&width=800" width="200" alt="this shirt back side photo">
+        <img src="https://campussutra.com/cdn/shop/files/CSMSSRT7738_2_b8d619df-8850-4fb5-9104-b0f3fa140756.jpg?v=1731147468&width=800" width="200" alt="this is a front side photo">
+        <img src="https://campussutra.com/cdn/shop/files/CSMSSRT7738_7_081cad64-67ce-47b2-8a4b-f89a17691c92.jpg?v=1731147468&width=800" width="200" alt="this is shirt zoom photo"><br>
+        <p>watch the product demo video</p>
+        <video controls width="400">
+            <source src="araku.MP4">
+        </video>
+
+        <hr>
+
+        <h1>this is premium and pure cotton shirt</h1>
+        <p>the above product  <strong>price: $45</strong></p>
+        <p>Average Rating:
+            4.5 out of 5 stars
+        </p>
+        <br>
+        <form>
+        <label>Size:</label>
+        <select name="product-size">
+            <option value="s">Small</option>
+            <option value="m">Medium</option>
+            <option value="l">Large</option>
+            <option value="xl">Extra Large</option>
+        </select>
+        <br>
+        <label for="pick">color:</label>
+        <input type="color" id="pick" name="color" value="#000000"><br>
+        <label for="q">Quantity:</label>
+        <input type="number" id="q" name="quantity" min="1" max="10" value="1"><br>
+
+        <input type="submit" value="Add to Shopping Bag">
+        </form><br>
+        <hr>
+        <details>
+            <summary>Product Details</summary>
+            <ul>
+                <li>100% pure cotton</li>
+                <li>lightweight</li>
+                <li>no shade color</li>
+                <li>washable cloth</li>
+            </ul>
+        </details>
+        <details>
+            <summary>shipping and return</summary>
+            <p>free deliver in banglore within 2 days</p>
+        </details>
+        <hr>
+        <footer>
+            <p>&copy;2026 stylehub fashion</p>
+        </footer>
+    </body>
+
+</html>
