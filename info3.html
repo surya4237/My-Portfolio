@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Resume(Surya)</title>
+        <style>
+    /* 1. Page Background & Document Feel */
+    body {
+        background-color: #f4f7f6;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #333;
+        margin: 0;
+        padding: 40px 20px;
+    }
+
+    /* 2. Main Paper Container */
+    header, main, #feedback, footer {
+        background: white;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 30px 50px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+
+    /* 3. Header Styling */
+    header {
+        text-align: center;
+        border-radius: 10px 10px 0 0;
+        border-bottom: 3px solid #007bff;
+    }
+
+    h1 { margin: 0; color: #0056b3; letter-spacing: 1px; }
+
+    /* 4. Progress Bars (Skills) */
+    progress {
+        width: 100%;
+        height: 12px;
+        accent-color: #007bff;
+        margin-bottom: 10px;
+    }
+
+    /* 5. Table Styling */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        border: none; /* We use CSS for borders instead of border="5" */
+    }
+
+    th {
+        background-color: #f8f9fa;
+        color: #555;
+        text-align: left;
+        padding: 12px;
+        border-bottom: 2px solid #dee2e6;
+    }
+
+    td {
+        padding: 12px;
+        border-bottom: 1px solid #eee;
+    }
+
+    /* 6. Form Styling */
+    #feedback {
+        border-top: 1px dashed #ccc;
+    }
+
+    input[type="submit"] {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #004a99;
+    }
+
+    footer {
+        border-radius: 0 0 10px 10px;
+        color: #777;
+        font-size: 0.9em;
+    }
+</style>
+    </head>
+    <body>
+        <header>
+            <h1>Lingareddy Surya Vadhan Reddy</h1>
+            <p>I am currently residing in Bengaluru,Karnataka.</p>
+            <a href="mailto:suryareddy917@gmail.com">suryareddy917@gmail.com</a>
+
+        </header>
+        <hr>
+        <main>
+            <section id="skills">
+            <h3>My Top Skills</h3>
+            <ul>
+                <li>HTML5 <progress value="90" max="100"></progress>90%</li>
+                <li>CSS <progress value="50" max="100"></progress>50%</li>
+                <li>GitHub<progress value="70" max="100"></progress>70%</li>
+            </ul>
+            </section>
+            <br>
+            <hr>
+            <section id="exp">
+            <h3>Experience</h3>
+            <table id="experience" border="5" cellpadding="10">
+                <tr><th>SL.No</th><th>Date</th><th>Milestone</th><th>Status</th></tr>
+                <tr><td>1</td><td>27-02-2026</td><td>Portfolio</td><td>Completed</td></tr>
+                <tr><td>2</td><td>28-02-2026</td><td>Product page</td><td>Completed</td></tr>
+                <tr><td>3</td><td>02-03-2026</td><td>Profile card</td><td>Completed</td></tr>
+            </table>
+            </section>
+            <br>
+            <hr>
+            <section id="projects">
+                <h3>Projects Details</h3>
+                <details>
+                    <summary><b>Portfolio</b></summary>
+                    <p>I have learned how to create a Portfolio of my skills.</p>
+                    <a href="">Source code</a>
+                </details>
+                <details>
+                    <summary><b>Product Page</b></summary>
+                    <p>i have learned so much of new tags i didn't know in my real life.</p>
+                    <a href="">Source code</a>
+                </details>
+                <details>
+                    <summary><b>Profile Card</b></summary>
+                    <p>I have learned to create a websites for my profile like Linkenin,instragram etc.</p>
+                    <a href="">Source code</a>
+                </details>
+            </section>
+        </main>
+        <hr>
+        <section id="feedback">
+            <h3>Visitor Feedback</h3>
+            <form>
+                <label for="task">Which task did you like most:</label>
+                <select id="task" name="Task">
+                    <option value="portfolio">Portfolio</option>
+                    <option value="productpage">Product Page</option>
+                    <option value="profilecard">ProfileCard</option>
+                </select><br><br>
+                <label for="hire">Would you like to hire surya?</label>
+                <input type="checkbox" id="hire" name="hiring_interest" value="yes"><br><br>
+                <input type="submit" value="Submit">
+
+            </form>
+        </section>
+        <footer>
+            <p align="center">&copy; 2026 Surya Vardhan Reddy | FrontEndDeveloper</p>
+        </footer>
+    </body>
+</html>
